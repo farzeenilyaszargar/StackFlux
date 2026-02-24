@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stackflux.tech/sitemap.xml

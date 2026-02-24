@@ -16,14 +16,51 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "StackFlux | Insights for the Modern Developer",
-  description: "Beautiful tech blogs and articles about AI tools, startups, and development. Discover the latest in tech with StackFlux.",
-  keywords: ["tech blog", "ai tools", "startups", "developer articles", "programming"],
-  authors: [{ name: "StackFlux Team" }],
+  title: {
+    default: "StackFlux | Strategic Insights for Modern Developers",
+    template: "%s | StackFlux",
+  },
+  description: "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
+  keywords: ["Nap Editor", "AI coding agent", "OpenClaw", "Software Architecture", "India Startups", "Autonomous Development", "Tech Blog"],
+  authors: [{ name: "StackFlux Editorial" }],
+  creator: "StackFlux",
+  icons: {
+    icon: "/logo.ico",
+    shortcut: "/logo.ico",
+    apple: "/logo.ico",
+  },
   openGraph: {
-    title: "StackFlux | Insights for the Modern Developer",
-    description: "Beautiful tech blogs and articles for developers.",
+    title: "StackFlux | The Future of Engineering",
+    description: "Deep-dives into the latest shifts in AI, engineering, and the global startup ecosystem.",
+    url: "https://stackflux.tech",
+    siteName: "StackFlux",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "StackFlux - Insights for the Modern Developer",
+      },
+    ],
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "StackFlux | Insights for the Modern Developer",
+    description: "High-signal tech publication covering the future of software development.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
