@@ -26,7 +26,8 @@ export function BlogPostContent({ content }: { content?: string }) {
       prose-headings:font-serif prose-headings:font-bold prose-headings:tracking-tight
       prose-p:leading-relaxed prose-p:text-foreground/90
       prose-h2:text-2xl sm:prose-h2:text-4xl prose-h2:mt-12 sm:prose-h2:mt-20 prose-h2:mb-6 sm:prose-h2:mb-8
-      prose-strong:text-foreground prose-strong:font-bold"
+      prose-strong:text-foreground prose-strong:font-bold
+      prose-a:text-indigo-600 dark:prose-a:text-indigo-400 prose-a:underline prose-a:decoration-indigo-200 dark:prose-a:decoration-indigo-900/50 hover:prose-a:decoration-indigo-500 prose-a:underline-offset-4 prose-a:transition-colors"
             dangerouslySetInnerHTML={{ __html: content || "" }}
         />
     );

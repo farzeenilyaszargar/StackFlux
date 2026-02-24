@@ -8,7 +8,7 @@ export default function AboutPage() {
                 <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-foreground tracking-tighter">
                     About StackFlux
                 </h1>
-                <div className="prose prose-zinc dark:prose-invert prose-lg prose-p:text-foreground prose-headings:text-foreground">
+                <div className="prose prose-zinc dark:prose-invert prose-lg prose-p:text-foreground prose-headings:text-foreground prose-a:text-indigo-600 dark:prose-a:text-indigo-400 prose-a:underline prose-a:decoration-indigo-200 dark:prose-a:decoration-indigo-900/50 hover:prose-a:decoration-indigo-500 prose-a:underline-offset-4 prose-a:transition-colors">
                     <p className="text-xl text-foreground dark:text-muted leading-relaxed mb-8">
                         StackFlux is a next-generation tech publication dedicated to uncovering the stories behind the code.
                         We focus on the intersection of artificial intelligence, high-growth startups, and the future of engineering.

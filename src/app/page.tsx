@@ -16,6 +16,35 @@ export default function Home() {
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "StackFlux",
+                "url": "https://stackflux.vercel.app",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://stackflux.vercel.app/search?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "StackFlux",
+                "url": "https://stackflux.vercel.app",
+                "logo": "https://stackflux.vercel.app/logo.ico",
+                "sameAs": [
+                  "https://twitter.com/stackflux",
+                  "https://linkedin.com/company/stackflux"
+                ]
+              }
+            ]),
+          }}
+        />
         <h1 className="sr-only">StackFlux - Strategic Insights for Modern Developers</h1>
 
         {/* Featured Post */}
