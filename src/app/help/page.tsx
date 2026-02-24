@@ -8,8 +8,8 @@ export default function HelpPage() {
                 <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-foreground tracking-tighter">
                     Help Center
                 </h1>
-                <div className="prose prose-zinc dark:prose-invert prose-lg">
-                    <p className="text-xl text-muted leading-relaxed mb-8">
+                <div className="prose prose-zinc dark:prose-invert prose-lg prose-p:text-foreground prose-headings:text-foreground">
+                    <p className="text-xl text-foreground dark:text-muted leading-relaxed mb-8">
                         Need assistance with StackFlux? You've come to the right place.
                     </p>
 

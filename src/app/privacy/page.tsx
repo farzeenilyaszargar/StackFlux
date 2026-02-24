@@ -10,9 +10,9 @@ export default function PrivacyPage() {
                 <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-foreground tracking-tighter">
                     Privacy Policy
                 </h1>
-                <p className="text-sm text-muted uppercase tracking-widest mb-12">Last Updated: {lastUpdated}</p>
+                <p className="text-sm text-foreground dark:text-muted uppercase tracking-widest mb-12">Last Updated: {lastUpdated}</p>
 
-                <div className="prose prose-zinc dark:prose-invert prose-lg">
+                <div className="prose prose-zinc dark:prose-invert prose-lg prose-p:text-foreground prose-headings:text-foreground">
                     <p>
                         At StackFlux, we take your privacy seriously. This policy outlines how we handle your data.
                     </p>
