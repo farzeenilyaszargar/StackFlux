@@ -38,7 +38,7 @@ export default async function BlogPost({ params }: PageProps) {
         <div className="min-h-screen">
             <Navbar />
 
-            <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 mb-20">
                 <BlogPostHeader post={post} />
                 <BlogPostImage post={post} />
                 <BlogPostContent content={post.content} />

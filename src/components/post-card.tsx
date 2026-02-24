@@ -26,7 +26,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                             <span>•</span>
                             <span>{post.date}</span>
                         </div>
-                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground group-hover:text-muted transition-colors">
+                        <h2 className="text-4xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground group-hover:text-muted transition-colors">
                             {post.title}
                         </h2>
                         <p className="text-lg text-muted line-clamp-3">
