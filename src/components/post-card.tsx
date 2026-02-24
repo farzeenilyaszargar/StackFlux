@@ -26,7 +26,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                             <span>•</span>
                             <span>{post.date}</span>
                         </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground group-hover:text-muted transition-colors">
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground group-hover:text-muted transition-colors">
                             {post.title}
                         </h2>
                         <p className="text-lg text-muted line-clamp-3">
@@ -47,7 +47,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                 <div className="flex items-center gap-2 text-xs text-muted">
                     <span className="font-medium text-foreground">{post.category}</span>
                 </div>
-                <h3 className="text-xl font-bold font-serif leading-snug text-foreground group-hover:text-muted transition-colors">
+                <h3 className="text-3xl font-bold font-serif leading-snug text-foreground group-hover:text-muted transition-colors">
                     {post.title}
                 </h3>
                 <p className="text-muted line-clamp-2 text-sm hidden sm:block">
