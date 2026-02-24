@@ -7,7 +7,7 @@ interface StaffPicksProps {
 export function StaffPicks({ posts }: StaffPicksProps) {
     return (
         <div>
-            <h2 className="text-sm font-bold uppercase tracking-widest text-muted mb-6 border-b border-zinc-100 dark:border-zinc-800 pb-2">
+            <h2 className="text-xl font-bold uppercase tracking-widest text-muted mb-6 border-b border-zinc-100 dark:border-zinc-800 pb-2">
                 Staff Picks
             </h2>
             <div className="space-y-6">
