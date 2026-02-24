@@ -2,7 +2,7 @@ import { posts } from "@/lib/data";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://stackflux.tech";
+    const baseUrl = "https://stackflux.vercel.app";
 
     const postUrls = posts.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}`,

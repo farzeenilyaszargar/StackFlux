@@ -16,6 +16,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://stackflux.vercel.app"),
   title: {
     default: "StackFlux | Strategic Insights for Modern Developers",
     template: "%s | StackFlux",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "StackFlux | The Future of Engineering",
     description: "Deep-dives into the latest shifts in AI, engineering, and the global startup ecosystem.",
-    url: "https://stackflux.tech",
+    url: "https://stackflux.vercel.app",
     siteName: "StackFlux",
     images: [
       {

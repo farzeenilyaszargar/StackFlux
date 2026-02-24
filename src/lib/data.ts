@@ -56,7 +56,7 @@ export const posts: Post[] = [
         date: "Feb 23, 2026",
         readTime: "9 min read",
         category: "Technology",
-        image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2000&auto=format&fit=crop",
+        image: "/openclaw.avif",
         content: `
       <p>The narrative of AI in early 2026 has been dominated by a few massive, closed-source giants. However, beneath the surface of the cloud-first paradigm, a quiet rebellion is taking place. <strong>OpenClaw</strong>, the project born from Peter Steinberger's experiments with autonomous agents, has emerged as the torchbearer for a new, hackable future.</p>
 
@@ -82,7 +82,7 @@ export const posts: Post[] = [
         date: "Feb 21, 2026",
         readTime: "13 min read",
         category: "Business",
-        image: "https://images.unsplash.com/photo-1611974717483-360057bac28a?q=80&w=2000&auto=format&fit=crop",
+        image: "/ai-stock-sim.webp",
         content: `
       <p>The "retail revolution" of 2021 was defined by social media hype and volatile "meme stocks." Five years later, the revolution is being powered by a far more sophisticated tool: the <strong>AI Market Simulator</strong>. What was once the exclusive domain of multi-billion dollar quantitative hedge funds is now available to any investor with a terminal.</p>
 
@@ -105,10 +105,10 @@ export const posts: Post[] = [
             name: "Alex River",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
         },
-        date: "Feb 24, 2026",
+        date: "Feb 19, 2026",
         readTime: "8 min read",
         category: "AI & Tools",
-        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop",
+        image: "/best-ai-tools.jpeg",
         content: `
       <p>The landscape of software development is undergoing a seismic shift. In 2026, Artificial Intelligence is no longer just a buzzword or a secondary assistant; it's a fundamental part of the developer's toolkit, integrated at every level of the lifecycle from architecture to deployment.</p>
       
@@ -139,7 +139,7 @@ export const posts: Post[] = [
             name: "Elena Chen",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena",
         },
-        date: "Feb 20, 2026",
+        date: "Feb 17, 2026",
         readTime: "12 min read",
         category: "Startups",
         image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop",
@@ -171,7 +171,7 @@ export const posts: Post[] = [
             name: "Jordan Smith",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan",
         },
-        date: "Feb 18, 2026",
+        date: "Feb 15, 2026",
         readTime: "5 min read",
         category: "Design",
         image: "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2000&auto=format&fit=crop",
@@ -197,7 +197,7 @@ export const posts: Post[] = [
             name: "Sam Wilson",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sam",
         },
-        date: "Feb 15, 2026",
+        date: "Feb 13, 2026",
         readTime: "7 min read",
         category: "Technology",
         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop",
@@ -223,7 +223,7 @@ export const posts: Post[] = [
             name: "Maya Patel",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Maya",
         },
-        date: "Feb 12, 2026",
+        date: "Feb 11, 2026",
         readTime: "10 min read",
         category: "Future",
         image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2000&auto=format&fit=crop",
@@ -249,10 +249,10 @@ export const posts: Post[] = [
             name: "Leo Green",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Leo",
         },
-        date: "Feb 10, 2026",
+        date: "Feb 9, 2026",
         readTime: "6 min read",
         category: "Sustainability",
-        image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2000&auto=format&fit=crop",
+        image: "/green-coding.avif",
         content: `
       <p>Tech's carbon footprint is larger than the airline industry's. In 2026, "Performance" and "Sustainability" have become synonymous. Every extra millisecond of CPU time on a server with millions of users translates to measurable tons of carbon emissions.</p>
       
@@ -275,7 +275,7 @@ export const posts: Post[] = [
             name: "Alex River",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
         },
-        date: "Feb 5, 2026",
+        date: "Feb 7, 2026",
         readTime: "15 min read",
         category: "Business",
         image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2000&auto=format&fit=crop",
@@ -301,7 +301,7 @@ export const posts: Post[] = [
             name: "Dr. Sarah Voget",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
         },
-        date: "Feb 1, 2026",
+        date: "Feb 5, 2026",
         readTime: "20 min read",
         category: "Science",
         image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2000&auto=format&fit=crop",
@@ -327,7 +327,7 @@ export const posts: Post[] = [
             name: "Elena Chen",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena",
         },
-        date: "Jan 28, 2026",
+        date: "Feb 3, 2026",
         readTime: "9 min read",
         category: "Ethics",
         image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2000&auto=format&fit=crop",
@@ -353,7 +353,7 @@ export const posts: Post[] = [
             name: "Sam Wilson",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sam",
         },
-        date: "Jan 22, 2026",
+        date: "Feb 1, 2026",
         readTime: "11 min read",
         category: "Engineering",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop",
@@ -379,7 +379,7 @@ export const posts: Post[] = [
             name: "Maya Patel",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Maya",
         },
-        date: "Jan 15, 2026",
+        date: "Jan 30, 2026",
         readTime: "8 min read",
         category: "Geopolitics",
         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
@@ -405,7 +405,7 @@ export const posts: Post[] = [
             name: "Jordan Smith",
             avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan",
         },
-        date: "Jan 10, 2026",
+        date: "Jan 28, 2026",
         readTime: "14 min read",
         category: "Philosophy",
         image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2000&auto=format&fit=crop",

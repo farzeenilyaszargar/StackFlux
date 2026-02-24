@@ -16,6 +16,8 @@ export default function Home() {
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 className="sr-only">StackFlux - Strategic Insights for Modern Developers</h1>
+
         {/* Featured Post */}
         <section className="mb-20">
           <PostCard post={featuredPost} featured />
