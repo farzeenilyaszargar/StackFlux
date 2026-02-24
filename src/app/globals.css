@@ -21,7 +21,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 h1,
@@ -29,5 +29,5 @@ h2,
 h3,
 h4,
 .font-serif {
-  font-family: var(--font-serif);
+  font-family: var(--font-instrument-serif), serif !important;
 }
