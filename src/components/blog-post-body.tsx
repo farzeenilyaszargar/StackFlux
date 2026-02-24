@@ -19,7 +19,7 @@ export function BlogPostImage({ post }: BlogPostImageProps) {
     );
 }
 
-export function BlogPostContent({ content }: { content: string }) {
+export function BlogPostContent({ content }: { content?: string }) {
     return (
         <div
             className="prose prose-zinc dark:prose-invert prose-xl max-w-none 
