@@ -51,7 +51,7 @@ export function Newsletter() {
                             setEmail(e.target.value);
                             if (status !== "idle") setStatus("idle");
                         }}
-                        className={`w-full px-5 py-3 text-sm rounded-full border bg-white dark:bg-zinc-950 text-foreground focus:outline-none focus:ring-2 focus:ring-zinc-500 transition-all ${status === "error" ? "border-red-500" : "border-zinc-300 dark:border-zinc-700"
+                        className={`w-full px-5 py-3 text-sm rounded-full border border-zinc-300 dark:border-zinc-700 bg-background text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-zinc-500 transition-all ${status === "error" ? "border-red-500" : ""
                             }`}
                     />
                 </div>
