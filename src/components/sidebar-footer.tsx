@@ -2,8 +2,11 @@ import Link from "next/link";
 
 export function SidebarFooter() {
     const links = [
+        { name: "Editorial Policy", href: "/editorial-policy" },
+        { name: "Corrections", href: "/corrections" },
         { name: "Help", href: "/help" },
         { name: "About", href: "/about" },
+        { name: "Contact", href: "/contact" },
         { name: "Privacy", href: "/privacy" },
         { name: "Terms", href: "/terms" }
     ];

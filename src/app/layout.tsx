@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   },
   description: "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
   keywords: ["Nap Editor", "AI coding agent", "OpenClaw", "Software Architecture", "India Startups", "Autonomous Development", "Tech Blog"],
-  authors: [{ name: "StackFlux Editorial" }],
   creator: "StackFlux",
   icons: {
     icon: "/logo.ico",
@@ -70,11 +69,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    name: "StackFlux",
+    url: "https://stackflux.vercel.app",
+    logo: "https://stackflux.vercel.app/logo.ico",
+  };
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "StackFlux",
+    url: "https://stackflux.vercel.app",
+    publisher: {
+      "@type": "Organization",
+      name: "StackFlux",
+      logo: "https://stackflux.vercel.app/logo.ico",
+    },
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationJsonLd, websiteJsonLd]),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
