@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy",
+    description:
+        "StackFlux privacy policy and how we handle data, cookies, and subscriber information.",
+    alternates: {
+        canonical: "/privacy",
+    },
+    openGraph: {
+        title: "Privacy Policy",
+        description:
+            "StackFlux privacy policy and how we handle data, cookies, and subscriber information.",
+        url: "/privacy",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Privacy Policy",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Privacy Policy",
+        description:
+            "StackFlux privacy policy and how we handle data, cookies, and subscriber information.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function PrivacyPage() {
     const lastUpdated = "February 24, 2026";

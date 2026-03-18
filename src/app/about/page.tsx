@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "About StackFlux",
+    description:
+        "Learn about StackFlux, an independent tech publication covering AI, startups, and the future of engineering.",
+    alternates: {
+        canonical: "/about",
+    },
+    openGraph: {
+        title: "About StackFlux",
+        description:
+            "Learn about StackFlux, an independent tech publication covering AI, startups, and the future of engineering.",
+        url: "/about",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - About",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About StackFlux",
+        description:
+            "Learn about StackFlux, an independent tech publication covering AI, startups, and the future of engineering.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function AboutPage() {
     return (

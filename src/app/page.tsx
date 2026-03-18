@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { PostCard } from "@/components/post-card";
 import { Newsletter } from "@/components/newsletter";
@@ -5,6 +6,38 @@ import { StaffPicks } from "@/components/staff-picks";
 import { LatestStories } from "@/components/latest-stories";
 import { SidebarFooter } from "@/components/sidebar-footer";
 import { posts } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "StackFlux | Strategic Insights for Modern Developers",
+  description:
+    "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "StackFlux | Strategic Insights for Modern Developers",
+    description:
+      "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
+    url: "/",
+    siteName: "StackFlux",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "StackFlux - Insights for the Modern Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "StackFlux | Strategic Insights for Modern Developers",
+    description:
+      "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function Home() {
   const featuredPost = posts[0];
@@ -24,10 +57,10 @@ export default function Home() {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "StackFlux",
-                "url": "https://stackflux.vercel.app",
+                "url": "https://stackflux.online",
                 "potentialAction": {
                   "@type": "SearchAction",
-                  "target": "https://stackflux.vercel.app/search?q={search_term_string}",
+                  "target": "https://stackflux.online/search?q={search_term_string}",
                   "query-input": "required name=search_term_string"
                 }
               },
@@ -35,8 +68,8 @@ export default function Home() {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "StackFlux",
-                "url": "https://stackflux.vercel.app",
-                "logo": "https://stackflux.vercel.app/logo.ico",
+                "url": "https://stackflux.online",
+                "logo": "https://stackflux.online/logo.ico",
                 "sameAs": [
                   "https://twitter.com/stackflux",
                   "https://linkedin.com/company/stackflux"

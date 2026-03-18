@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Corrections",
+    description:
+        "Request a correction or review updated stories at StackFlux.",
+    alternates: {
+        canonical: "/corrections",
+    },
+    openGraph: {
+        title: "Corrections",
+        description:
+            "Request a correction or review updated stories at StackFlux.",
+        url: "/corrections",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Corrections",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Corrections",
+        description:
+            "Request a correction or review updated stories at StackFlux.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function CorrectionsPage() {
     return (

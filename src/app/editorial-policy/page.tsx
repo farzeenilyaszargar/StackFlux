@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Editorial Policy",
+    description:
+        "How StackFlux reports, sources, and corrects stories.",
+    alternates: {
+        canonical: "/editorial-policy",
+    },
+    openGraph: {
+        title: "Editorial Policy",
+        description:
+            "How StackFlux reports, sources, and corrects stories.",
+        url: "/editorial-policy",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Editorial Policy",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Editorial Policy",
+        description:
+            "How StackFlux reports, sources, and corrects stories.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function EditorialPolicyPage() {
     return (

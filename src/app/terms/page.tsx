@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Terms of Service",
+    description:
+        "StackFlux terms of service and usage guidelines.",
+    alternates: {
+        canonical: "/terms",
+    },
+    openGraph: {
+        title: "Terms of Service",
+        description:
+            "StackFlux terms of service and usage guidelines.",
+        url: "/terms",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Terms of Service",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Terms of Service",
+        description:
+            "StackFlux terms of service and usage guidelines.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function TermsPage() {
     const lastUpdated = "February 24, 2026";

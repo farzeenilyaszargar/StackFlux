@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Contact StackFlux",
+    description:
+        "Contact the StackFlux editorial team for tips, story ideas, and partnerships.",
+    alternates: {
+        canonical: "/contact",
+    },
+    openGraph: {
+        title: "Contact StackFlux",
+        description:
+            "Contact the StackFlux editorial team for tips, story ideas, and partnerships.",
+        url: "/contact",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Contact",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact StackFlux",
+        description:
+            "Contact the StackFlux editorial team for tips, story ideas, and partnerships.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function ContactPage() {
     return (

@@ -1,4 +1,37 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
+
+export const metadata: Metadata = {
+    title: "Help Center",
+    description:
+        "Get help with StackFlux subscriptions, contributions, and support.",
+    alternates: {
+        canonical: "/help",
+    },
+    openGraph: {
+        title: "Help Center",
+        description:
+            "Get help with StackFlux subscriptions, contributions, and support.",
+        url: "/help",
+        siteName: "StackFlux",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "StackFlux - Help Center",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Help Center",
+        description:
+            "Get help with StackFlux subscriptions, contributions, and support.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function HelpPage() {
     return (
