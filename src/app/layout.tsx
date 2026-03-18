@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   keywords: ["Nap Editor", "AI coding agent", "OpenClaw", "Software Architecture", "India Startups", "Autonomous Development", "Tech Blog"],
   creator: "StackFlux",
   icons: {
-    icon: "/logo.ico",
-    shortcut: "/logo.ico",
-    apple: "/logo.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "StackFlux | The Future of Engineering",
