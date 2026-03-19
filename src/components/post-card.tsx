@@ -8,18 +8,19 @@ interface PostCardProps {
 }
 
 export function PostCard({ post, featured = false }: PostCardProps) {
+    const isNapCode = post.slug === "nap-editor-autonomous-development-india";
     if (featured) {
         return (
-            <Link href={`/blog/${post.slug}`} className="group block mb-12">
+            <div className="group block mb-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-lg">
+                    <Link href={`/blog/${post.slug}`} className="relative aspect-[16/9] overflow-hidden rounded-lg">
                         <Image
                             src={post.image}
                             alt={post.title}
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
-                    </div>
+                    </Link>
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-sm text-muted">
                             <span className="font-semibold text-foreground">{post.category}</span>
@@ -27,17 +28,30 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                             <span>{post.date}</span>
                         </div>
                         <h2 className="text-4xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground group-hover:text-muted transition-colors">
-                            {post.title}
+                            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                         </h2>
                         <p className="text-lg text-muted line-clamp-3">
                             {post.excerpt}
                         </p>
                         <div className="flex items-center gap-2 pt-2 text-sm text-muted">
                             <span>{post.readTime}</span>
+                            {isNapCode && (
+                                <>
+                                    <span>•</span>
+                                    <a
+                                        href="https://www.nap-code.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-semibold text-foreground hover:text-muted transition-colors"
+                                    >
+                                        Visit Nap Code →
+                                    </a>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
-            </Link>
+            </div>
         );
     }
 
