@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     if (!post) return { title: "Post Not Found" };
 
-    const canonicalUrl = `https://stackflux.online/blog/${slug}`;
+    const canonicalUrl = `https://www.stackflux.online/blog/${slug}`;
     const imageUrl = post.image.startsWith("http")
         ? post.image
-        : `https://stackflux.online${post.image}`;
+        : `https://www.stackflux.online${post.image}`;
     const publishedIso = new Date(post.date).toISOString();
 
     return {
@@ -63,7 +63,7 @@ export default async function BlogPost({ params }: PageProps) {
 
     const imageUrl = post.image.startsWith("http")
         ? post.image
-        : `https://stackflux.online${post.image}`;
+        : `https://www.stackflux.online${post.image}`;
     const publishedIso = new Date(post.date).toISOString();
     const plainTextContent = post.content
         ? post.content.replace(/<[^>]*>/g, " ")
@@ -106,12 +106,12 @@ export default async function BlogPost({ params }: PageProps) {
                                     "name": "StackFlux",
                                     "logo": {
                                         "@type": "ImageObject",
-                                        "url": "https://stackflux.online/logo.ico"
+                                        "url": "https://www.stackflux.online/logo.ico"
                                     }
                                 },
                                 "mainEntityOfPage": {
                                     "@type": "WebPage",
-                                    "@id": `https://stackflux.online/blog/${post.slug}`
+                                    "@id": `https://www.stackflux.online/blog/${post.slug}`
                                 }
                             },
                             {
@@ -122,19 +122,19 @@ export default async function BlogPost({ params }: PageProps) {
                                         "@type": "ListItem",
                                         "position": 1,
                                         "name": "Home",
-                                        "item": "https://stackflux.online"
+                                        "item": "https://www.stackflux.online"
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": post.category,
-                                        "item": `https://stackflux.online/?category=${encodeURIComponent(post.category.toLowerCase())}`
+                                        "item": `https://www.stackflux.online/?category=${encodeURIComponent(post.category.toLowerCase())}`
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 3,
                                         "name": post.title,
-                                        "item": `https://stackflux.online/blog/${post.slug}`
+                                        "item": `https://www.stackflux.online/blog/${post.slug}`
                                     }
                                 ]
                             }

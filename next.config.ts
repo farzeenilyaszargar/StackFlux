@@ -22,10 +22,10 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: "host",
-            value: "www.stackflux.online",
+            value: "stackflux.online",
           },
         ],
-        destination: "https://stackflux.online/:path*",
+        destination: "https://www.stackflux.online/:path*",
         permanent: true,
       },
     ];

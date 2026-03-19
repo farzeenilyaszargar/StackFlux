@@ -16,7 +16,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://stackflux.online"),
+  metadataBase: new URL("https://www.stackflux.online"),
   title: {
     default: "StackFlux | Strategic Insights for Modern Developers",
     template: "%s | StackFlux",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "StackFlux | The Future of Engineering",
     description: "Deep-dives into the latest shifts in AI, engineering, and the global startup ecosystem.",
-    url: "https://stackflux.online",
+    url: "https://www.stackflux.online",
     siteName: "StackFlux",
     images: [
       {
@@ -73,18 +73,18 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     name: "StackFlux",
-    url: "https://stackflux.online",
-    logo: "https://stackflux.online/logo.ico",
+    url: "https://www.stackflux.online",
+    logo: "https://www.stackflux.online/logo.ico",
   };
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "StackFlux",
-    url: "https://stackflux.online",
+    url: "https://www.stackflux.online",
     publisher: {
       "@type": "Organization",
       name: "StackFlux",
-      logo: "https://stackflux.online/logo.ico",
+      logo: "https://www.stackflux.online/logo.ico",
     },
   };
 

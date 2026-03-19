@@ -57,10 +57,10 @@ export default function Home() {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "StackFlux",
-                "url": "https://stackflux.online",
+                "url": "https://www.stackflux.online",
                 "potentialAction": {
                   "@type": "SearchAction",
-                  "target": "https://stackflux.online/search?q={search_term_string}",
+                  "target": "https://www.stackflux.online/search?q={search_term_string}",
                   "query-input": "required name=search_term_string"
                 }
               },
@@ -68,8 +68,8 @@ export default function Home() {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "StackFlux",
-                "url": "https://stackflux.online",
-                "logo": "https://stackflux.online/logo.ico",
+                "url": "https://www.stackflux.online",
+                "logo": "https://www.stackflux.online/logo.ico",
                 "sameAs": [
                   "https://twitter.com/stackflux",
                   "https://linkedin.com/company/stackflux"
