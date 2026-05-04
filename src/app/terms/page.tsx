@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Terms of Service",
     description:
         "StackFlux terms of service and usage guidelines.",
+    keywords: [
+        "StackFlux terms",
+        "terms of service",
+        "usage guidelines",
+        "content policy",
+    ],
     alternates: {
         canonical: "/terms",
     },

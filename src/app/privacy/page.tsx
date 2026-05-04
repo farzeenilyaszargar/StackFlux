@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Privacy Policy",
     description:
         "StackFlux privacy policy and how we handle data, cookies, and subscriber information.",
+    keywords: [
+        "StackFlux privacy policy",
+        "data handling",
+        "cookie policy",
+        "subscriber privacy",
+    ],
     alternates: {
         canonical: "/privacy",
     },

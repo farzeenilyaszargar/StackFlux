@@ -12,6 +12,7 @@ export function BlogPostImage({ post }: BlogPostImageProps) {
                 src={post.image}
                 alt={post.title}
                 fill
+                sizes="(min-width: 1280px) 1200px, (min-width: 768px) 90vw, 96vw"
                 className="object-cover"
                 priority
             />

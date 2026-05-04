@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Editorial Policy",
     description:
         "How StackFlux reports, sources, and corrects stories.",
+    keywords: [
+        "StackFlux editorial policy",
+        "reporting standards",
+        "sourcing policy",
+        "corrections process",
+    ],
     alternates: {
         canonical: "/editorial-policy",
     },

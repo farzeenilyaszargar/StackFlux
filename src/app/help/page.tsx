@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Help Center",
     description:
         "Get help with StackFlux subscriptions, contributions, and support.",
+    keywords: [
+        "StackFlux help center",
+        "subscription support",
+        "contributor questions",
+        "contact support",
+    ],
     alternates: {
         canonical: "/help",
     },

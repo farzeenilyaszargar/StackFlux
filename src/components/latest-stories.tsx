@@ -6,7 +6,7 @@ import { Post } from "@/lib/data";
 import { Plus } from "lucide-react";
 
 interface LatestStoriesProps {
-    posts: Post[];
+    posts: Array<Omit<Post, "content">>;
 }
 
 export function LatestStories({ posts }: LatestStoriesProps) {

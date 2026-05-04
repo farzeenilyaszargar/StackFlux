@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Post } from "@/lib/data";
 
 interface PostCardProps {
-    post: Post;
+    post: Omit<Post, "content">;
     featured?: boolean;
 }
 
 export function PostCard({ post, featured = false }: PostCardProps) {
-    const isNapCode = post.slug === "nap-editor-autonomous-development-india";
+    const isNapCode = post.slug === "napster-cli-secure-local-multi-agent-development";
     if (featured) {
         return (
             <div className="group block mb-12">
@@ -18,6 +18,8 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                             src={post.image}
                             alt={post.title}
                             fill
+                            sizes="(min-width: 1024px) 50vw, 100vw"
+                            priority
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                     </Link>
@@ -39,12 +41,12 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                                 <>
                                     <span>•</span>
                                     <a
-                                        href="https://www.nap-code.com"
+                                        href="https://www.napster-cli.dev"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-semibold text-foreground hover:text-muted transition-colors"
                                     >
-                                        Visit Nap Code →
+                                        Visit Napster Cli →
                                     </a>
                                 </>
                             )}
@@ -79,6 +81,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                         src={post.image}
                         alt={post.title}
                         fill
+                        sizes="(min-width: 640px) 25vw, 100vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                 </div>

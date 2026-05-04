@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Contact StackFlux",
     description:
         "Contact the StackFlux editorial team for tips, story ideas, and partnerships.",
+    keywords: [
+        "contact StackFlux",
+        "editorial inquiries",
+        "story tips",
+        "media partnerships",
+    ],
     alternates: {
         canonical: "/contact",
     },

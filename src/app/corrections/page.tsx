@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "Corrections",
     description:
         "Request a correction or review updated stories at StackFlux.",
+    keywords: [
+        "StackFlux corrections",
+        "request a correction",
+        "fact-check updates",
+        "editorial transparency",
+    ],
     alternates: {
         canonical: "/corrections",
     },

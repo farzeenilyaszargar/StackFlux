@@ -11,6 +11,18 @@ interface PageProps {
     params: Promise<{ slug: string }>;
 }
 
+const napsterSeoSlug = "napster-cli-secure-local-multi-agent-development";
+const napsterSeoTerms = [
+    "nap code",
+    "napster cli",
+    "nap coding",
+    "nap",
+    "napster code",
+    "secure ai generated code",
+    "multi-agent workflows locally",
+    "ai code security",
+];
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
     const post = posts.find((p) => p.slug === slug);
@@ -22,10 +34,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         ? post.image
         : `https://www.stackflux.online${post.image}`;
     const publishedIso = new Date(post.date).toISOString();
+    const keywords =
+        post.slug === napsterSeoSlug
+            ? napsterSeoTerms
+            : Array.from(new Set(post.title.replace(/[^\w\s-]/g, " ").split(/\s+/).filter(Boolean))).slice(0, 12);
 
     return {
         title: post.title,
         description: post.excerpt,
+        keywords,
         alternates: {
             canonical: canonicalUrl,
         },
@@ -72,7 +89,10 @@ export default async function BlogPost({ params }: PageProps) {
         ? plainTextContent.trim().split(/\s+/).length
         : undefined;
     const keywordSeed = post.title.replace(/[^\w\s-]/g, " ").split(/\s+/).filter(Boolean);
-    const keywords = Array.from(new Set([post.category, ...keywordSeed])).slice(0, 12);
+    const keywords =
+        post.slug === napsterSeoSlug
+            ? Array.from(new Set([post.category, ...napsterSeoTerms]))
+            : Array.from(new Set([post.category, ...keywordSeed])).slice(0, 12);
 
     return (
         <div className="min-h-screen">
@@ -157,7 +177,6 @@ export default async function BlogPost({ params }: PageProps) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {posts
                             .filter(p => p.slug !== post.slug)
-                            .sort(() => 0.5 - Math.random())
                             .slice(0, 2)
                             .map(p => (
                                 <Link key={p.id} href={`/blog/${p.slug}`} className="group space-y-4">

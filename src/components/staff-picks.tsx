@@ -1,7 +1,7 @@
 import { Post } from "@/lib/data";
 
 interface StaffPicksProps {
-    posts: Post[];
+    posts: Array<Omit<Post, "content">>;
 }
 
 export function StaffPicks({ posts }: StaffPicksProps) {

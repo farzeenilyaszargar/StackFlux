@@ -5,6 +5,12 @@ export const metadata: Metadata = {
     title: "About StackFlux",
     description:
         "Learn about StackFlux, an independent tech publication covering AI, startups, and the future of engineering.",
+    keywords: [
+        "about StackFlux",
+        "tech publication mission",
+        "AI and startup journalism",
+        "engineering editorial vision",
+    ],
     alternates: {
         canonical: "/about",
     },

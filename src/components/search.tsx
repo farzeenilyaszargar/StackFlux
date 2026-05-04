@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 import { Search as SearchIcon, X } from "lucide-react";
 import { posts, Post } from "@/lib/data";
@@ -12,6 +12,15 @@ export function Search() {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState<Post[]>([]);
     const [mounted, setMounted] = useState(false);
+    const normalizedQuery = query.trim().toLowerCase();
+    const searchablePosts = useMemo(
+        () =>
+            posts.map((post) => ({
+                ...post,
+                searchText: `${post.title} ${post.excerpt} ${post.category}`.toLowerCase(),
+            })),
+        []
+    );
 
     useEffect(() => {
         setMounted(true);
@@ -38,18 +47,16 @@ export function Search() {
     }, []);
 
     useEffect(() => {
-        if (query.length > 2) {
-            const filtered = posts.filter(
-                (post) =>
-                    post.title.toLowerCase().includes(query.toLowerCase()) ||
-                    post.excerpt.toLowerCase().includes(query.toLowerCase()) ||
-                    post.category.toLowerCase().includes(query.toLowerCase())
-            );
-            setResults(filtered.slice(0, 5));
+        if (normalizedQuery.length > 2) {
+            const filtered = searchablePosts
+                .filter((post) => post.searchText.includes(normalizedQuery))
+                .slice(0, 5)
+                .map(({ searchText: _searchText, ...post }) => post);
+            setResults(filtered);
         } else {
             setResults([]);
         }
-    }, [query]);
+    }, [normalizedQuery, searchablePosts]);
 
     // Prevent scrolling when search is open
     useEffect(() => {
@@ -115,6 +122,7 @@ export function Search() {
                                             src={post.image}
                                             alt={post.title}
                                             fill
+                                            sizes="80px"
                                             className="object-cover transition-transform group-hover:scale-105 duration-500"
                                         />
                                     </div>

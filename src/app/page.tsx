@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   title: "StackFlux | Strategic Insights for Modern Developers",
   description:
     "High-signal tech publication covering AI engineering, autonomous agents, hard-tech startups, and the future of software development.",
+  keywords: [
+    "AI engineering blog",
+    "autonomous development",
+    "developer insights",
+    "software architecture trends",
+    "startup engineering analysis",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -41,8 +48,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const featuredPost = posts[0];
-  const otherPosts = posts.slice(1);
-  const staffPicks = posts.slice(0, 3);
+  const otherPosts = posts.slice(1).map(({ content: _content, ...post }) => post);
+  const staffPicks = posts.slice(0, 3).map(({ content: _content, ...post }) => post);
 
   return (
     <div className="min-h-screen">

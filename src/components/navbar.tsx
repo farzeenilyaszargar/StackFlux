@@ -1,8 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { ThemeToggle } from "./theme-toggle";
-import { Search } from "./search";
+
+const Search = dynamic(() => import("./search").then((mod) => mod.Search), {
+    ssr: false,
+    loading: () => null,
+});
 
 export function Navbar() {
     return (
