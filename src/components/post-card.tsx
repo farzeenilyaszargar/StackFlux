@@ -41,7 +41,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                                 <>
                                     <span>•</span>
                                     <a
-                                        href="https://www.napster-cli.dev"
+                                        href="https://www.nap-code.com"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-semibold text-foreground hover:text-muted transition-colors"
