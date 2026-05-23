@@ -21,7 +21,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/blog/nap-editor-autonomous-development-india",
-        destination: "/blog/napster-cli-secure-local-multi-agent-development",
+        destination: "/blog/nap-code-secure-local-multi-agent-development",
+        permanent: true,
+      },
+      {
+        source: "/blog/napster-cli-secure-local-multi-agent-development",
+        destination: "/blog/nap-code-secure-local-multi-agent-development",
         permanent: true,
       },
       {

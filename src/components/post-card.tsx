@@ -8,7 +8,7 @@ interface PostCardProps {
 }
 
 export function PostCard({ post, featured = false }: PostCardProps) {
-    const isNapCode = post.slug === "napster-cli-secure-local-multi-agent-development";
+    const isNapCode = post.slug === "nap-code-secure-local-multi-agent-development";
     if (featured) {
         return (
             <div className="group block mb-12">
@@ -46,7 +46,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                                         rel="noopener noreferrer"
                                         className="font-semibold text-foreground hover:text-muted transition-colors"
                                     >
-                                        Visit Napster Cli →
+                                        Visit Nap Code →
                                     </a>
                                 </>
                             )}

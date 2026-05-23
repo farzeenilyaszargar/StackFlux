@@ -11,8 +11,8 @@ interface PageProps {
     params: Promise<{ slug: string }>;
 }
 
-const napsterSeoSlug = "napster-cli-secure-local-multi-agent-development";
-const napsterSeoTerms = [
+const napCodeSeoSlug = "nap-code-secure-local-multi-agent-development";
+const napCodeSeoTerms = [
     "nap code",
     "napster cli",
     "nap coding",
@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         : `https://www.stackflux.online${post.image}`;
     const publishedIso = new Date(post.date).toISOString();
     const keywords =
-        post.slug === napsterSeoSlug
-            ? napsterSeoTerms
+        post.slug === napCodeSeoSlug
+            ? napCodeSeoTerms
             : Array.from(new Set(post.title.replace(/[^\w\s-]/g, " ").split(/\s+/).filter(Boolean))).slice(0, 12);
 
     return {
@@ -90,8 +90,8 @@ export default async function BlogPost({ params }: PageProps) {
         : undefined;
     const keywordSeed = post.title.replace(/[^\w\s-]/g, " ").split(/\s+/).filter(Boolean);
     const keywords =
-        post.slug === napsterSeoSlug
-            ? Array.from(new Set([post.category, ...napsterSeoTerms]))
+        post.slug === napCodeSeoSlug
+            ? Array.from(new Set([post.category, ...napCodeSeoTerms]))
             : Array.from(new Set([post.category, ...keywordSeed])).slice(0, 12);
 
     return (
