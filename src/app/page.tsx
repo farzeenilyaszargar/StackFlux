@@ -76,7 +76,7 @@ export default function Home() {
                 "@type": "Organization",
                 "name": "StackFlux",
                 "url": "https://www.stackflux.online",
-                "logo": "https://www.stackflux.online/logo.ico",
+                "logo": "https://www.stackflux.online/logo.svg",
                 "sameAs": [
                   "https://twitter.com/stackflux",
                   "https://linkedin.com/company/stackflux"

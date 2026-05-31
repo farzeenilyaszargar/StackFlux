@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/favicon.ico",
+        destination: "/logo.svg",
+        permanent: true,
+      },
+      {
         source: "/blog/nap-editor-autonomous-development-india",
         destination: "/blog/nap-code-secure-local-multi-agent-development",
         permanent: true,

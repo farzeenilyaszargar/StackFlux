@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   keywords: ["Nap Editor", "AI coding agent", "OpenClaw", "Software Architecture", "India Startups", "Autonomous Development", "Tech Blog"],
   creator: "StackFlux",
   icons: {
-    icon: "/favicon.ico?v=2",
-    shortcut: "/favicon.ico?v=2",
-    apple: "/favicon.ico?v=2",
+    icon: "/logo.svg?v=3",
+    shortcut: "/logo.svg?v=3",
+    apple: "/logo.svg?v=3",
   },
   openGraph: {
     title: "StackFlux | The Future of Engineering",
@@ -74,7 +74,7 @@ export default function RootLayout({
     "@type": "NewsMediaOrganization",
     name: "StackFlux",
     url: "https://www.stackflux.online",
-    logo: "https://www.stackflux.online/logo.ico",
+    logo: "https://www.stackflux.online/logo.svg",
   };
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -84,7 +84,7 @@ export default function RootLayout({
     publisher: {
       "@type": "Organization",
       name: "StackFlux",
-      logo: "https://www.stackflux.online/logo.ico",
+      logo: "https://www.stackflux.online/logo.svg",
     },
   };
 

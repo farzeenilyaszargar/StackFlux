@@ -126,7 +126,7 @@ export default async function BlogPost({ params }: PageProps) {
                                     "name": "StackFlux",
                                     "logo": {
                                         "@type": "ImageObject",
-                                        "url": "https://www.stackflux.online/logo.ico"
+                                        "url": "https://www.stackflux.online/logo.svg"
                                     }
                                 },
                                 "mainEntityOfPage": {
